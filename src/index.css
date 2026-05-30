@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-studio-950: #0a0a0a;
+  --color-studio-900: #121212;
+  --color-studio-800: #1e1e1e;
+  --color-studio-400: #a3a3a3;
+  --color-studio-accent: #f5f5f5;
+}
+
+@layer base {
+  body {
+    @apply bg-studio-950 text-studio-accent font-sans antialiased;
+  }
+}
